@@ -122,3 +122,16 @@ year={2018}
 
 ## Acknowledgements
 This work was mainly done while the first author did a research internship at [Clova AI Research, NAVER](https://clova.ai/en/research/research-area-detail.html?id=0). We thank all the researchers at NAVER, especially Donghyun Kwak, for insightful discussions.
+
+
+
+
+# VOCdevkit数据集运行命令
+# 训练
+python main.py --mode train --dataset VOC --voc_image_dir VOCdevkit
+# 验证
+python main.py \
+    --mode eval \
+    --dataset VOC \
+    --voc_image_dir VOCdevkit \
+    --test_iters 10000 # 使用第10000步的迭代进行评估（但是我模型文件太大了我没有上传，所以需要自己先训练）
