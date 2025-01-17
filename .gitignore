@@ -1,0 +1,7 @@
+.history/
+__pycache__/
+stargan/results/converted_images/
+stargan/models/
+stargan/logs/
+stargan/samples/
+VOCdevkit/
